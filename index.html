@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор Точки Безубыточности</title>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Подключение MathJax для отображения формул -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Калькулятор Точки Безубыточности</h1>
+            <form id="breakeven-form" novalidate>
+                <div class="input-group">
+                    <label for="fixedCosts">Постоянные затраты (FC):</label>
+                    <input type="number" id="fixedCosts" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="variableCosts">Переменные затраты на единицу (VC):</label>
+                    <input type="number" id="variableCosts" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-group">
+                    <label for="pricePerUnit">Цена продажи единицы (P):</label>
+                    <input type="number" id="pricePerUnit" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit">Рассчитать</button>
+            </form>
+            <div id="results" class="hidden">
+                <h2>Результаты расчёта</h2>
+                <div class="calculation">
+                    <!-- Здесь будут отображаться расчёты -->
+                </div>
+                <canvas id="breakevenChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Подключение скрипта -->
+    <script src="script.js"></script>
+</body>
+</html>

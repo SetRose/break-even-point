@@ -1,0 +1,134 @@
+/* Сброс стилей и шрифты */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #212121; /* Цвет фона */
+    color: #ececec; /* Основной цвет текста */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #2f2f2f; /* Цвет карточки */
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    color: #ececec;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #ececec;
+    margin-top: 40px; /* Отступ сверху */
+    margin-bottom: 30px; /* Увеличен отступ снизу */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ececec;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #3a3a3a;
+    border-radius: 8px;
+    background-color: #2f2f2f;
+    color: #ececec;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #66FF99;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #454545;
+    color: #ececec;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5a5a5a;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.calculation {
+    margin-top: 20px;
+    color: #ececec;
+}
+
+.calculation p {
+    margin-bottom: 25px; /* Увеличен отступ между формулами */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.calculation .formula {
+    color: #b4b4b4;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.good-value {
+    color: #66ff99;
+}
+
+.bad-value {
+    color: #ff6b6b;
+}
+
+canvas {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
